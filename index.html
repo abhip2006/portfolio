@@ -3,152 +3,271 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="dark light" />
-  <title>Abhinav Penagalapati — Portfolio</title>
+  <meta name="color-scheme" content="light" />
+  <title>Abhinav Penagalapati — GTM / Growth</title>
   <meta name="description" content="Abhinav Penagalapati — GTM / Growth at ChipAgents. Berkeley Economics &amp; Data Science." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="site">
-    <a class="brand" href="#top" aria-label="Home">ap<span class="brand-cursor" aria-hidden="true"></span></a>
-    <nav class="site-nav" aria-label="Primary">
+  <header class="site-header" role="banner">
+    <a class="brand" href="#top">ap<span class="dot" aria-hidden="true"></span></a>
+    <nav class="nav" aria-label="Primary">
       <a href="#work">Work</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="site-email" href="mailto:abhip@berkeley.edu" aria-label="Email Abhinav">abhip@berkeley.edu</a>
+    <a class="header-mail" href="mailto:abhip@berkeley.edu">abhip@berkeley.edu</a>
   </header>
 
   <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-heading">
-      <p class="eyebrow">GTM / Growth · Berkeley</p>
-      <h1 id="hero-heading" class="display">Abhinav<br />Penagalapati</h1>
-      <div class="hero-actions">
-        <a class="btn" href="#work">See work <span aria-hidden="true">→</span></a>
+
+    <div class="issue-bar">
+      <div class="rule" aria-hidden="true"></div>
+      <div>Issue No. 01 &nbsp;·&nbsp; Spring 2026 &nbsp;·&nbsp; Berkeley, CA</div>
+      <div class="rule" aria-hidden="true"></div>
+    </div>
+
+    <section class="hero" id="top" aria-label="Masthead">
+      <div class="hero__main">
+        <div class="hero__eyebrow">
+          GTM / Growth <span class="sep">·</span> Berkeley
+        </div>
+        <h1>Abhinav<br /><em>Penagalapati</em></h1>
+        <a class="hero__cta" href="#work">
+          <span>See work</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
       </div>
+      <aside class="hero__aside reveal">
+        <p class="hero__lede">
+          I work at the seam between <em>go-to-market</em> and data engineering — building revenue pipelines, lead-routing systems, and the CRM plumbing that keeps sales teams moving.
+        </p>
+        <dl class="hero__meta">
+          <dt>Role</dt><dd>GTM at ChipAgents</dd>
+          <dt>Study</dt><dd>Economics &amp; Data Science, UC Berkeley</dd>
+          <dt>Stack</dt><dd>Salesforce · Python · Claude API</dd>
+          <dt>Reach</dt><dd><a href="mailto:abhip@berkeley.edu">abhip@berkeley.edu</a></dd>
+        </dl>
+      </aside>
     </section>
 
-    <section id="work" class="section" aria-labelledby="work-heading">
-      <header class="section-head">
-        <span class="section-index" aria-hidden="true">01</span>
-        <h2 id="work-heading">Selected work</h2>
-      </header>
-      <ol class="work-list">
-        <li class="work case-study">
-          <h3 class="work-title">GTM Data Enrichment System</h3>
-          <dl class="case">
-            <dt>Problem</dt>
-            <dd>Outbound teams needed clean, ranked account and contact data to sustain high-volume motion — manual CRM hygiene and generic lists were capping reply rates.</dd>
-            <dt>Approach</dt>
-            <dd>Python pipeline sourcing and enriching account + contact data from Crunchbase and LinkedIn into Salesforce. Multi-source identity workflow in Clay mapping personas by title. Weighted ICP scoring integrated with Claude API + Smartlead across outbound sequences.</dd>
-            <dt>Impact</dt>
-            <dd>
-              <ul class="metrics">
-                <li>2–3× higher outbound reply rates</li>
-                <li>300+ high-intent accounts surfaced</li>
-                <li>600+ VP / Head-of-Engineering personas mapped</li>
-              </ul>
-            </dd>
+    <section class="section" id="work" aria-labelledby="s01">
+      <div class="sec-head">
+        <div class="sec-num">§ 01</div>
+        <h2 class="sec-title" id="s01">Selected Work</h2>
+        <div class="sec-kicker">A Feature Report</div>
+      </div>
+
+      <article class="feature reveal">
+        <div class="feature__info">
+          <span class="feature__tag">Case Study</span>
+          <h3>GTM Data Enrichment System</h3>
+
+          <dl>
+            <div class="feature__sub">
+              <dt>Problem</dt>
+              <dd>Outbound teams needed clean, ranked account and contact data to sustain high-volume motion — manual CRM hygiene and generic lists were capping reply rates.</dd>
+            </div>
+            <div class="feature__sub">
+              <dt>Approach</dt>
+              <dd>Python pipeline sourcing and enriching account and contact data from Crunchbase and LinkedIn into Salesforce. A multi-source identity workflow in Clay mapped personas by title. Weighted ICP scoring integrated with the Claude API and Smartlead across outbound sequences.</dd>
+            </div>
           </dl>
-          <p class="work-stack"><span>Python</span><span>Salesforce</span><span>Clay</span><span>Claude API</span><span>Smartlead</span></p>
-        </li>
-      </ol>
+
+          <div class="stack-line">
+            <strong>Stack</strong> &nbsp;·&nbsp; Python &nbsp;·&nbsp; Salesforce &nbsp;·&nbsp; Clay &nbsp;·&nbsp; Claude API &nbsp;·&nbsp; Smartlead
+          </div>
+        </div>
+
+        <div class="feature__media">
+          <blockquote class="pullquote">
+            <q>Fast feedback loops, clean data pipelines, and tools that respect the user&rsquo;s time.</q>
+            <cite>— Operating principles</cite>
+          </blockquote>
+
+          <div class="impact" role="list" aria-label="Impact metrics">
+            <div class="impact__cell" role="listitem">
+              <div class="k">2<em>–</em>3<em>×</em></div>
+              <div class="v">Higher outbound reply rates versus baseline sequences.</div>
+            </div>
+            <div class="impact__cell" role="listitem">
+              <div class="k">300<em>+</em></div>
+              <div class="v">High-intent accounts surfaced through weighted ICP scoring.</div>
+            </div>
+            <div class="impact__cell" role="listitem">
+              <div class="k">600<em>+</em></div>
+              <div class="v">VP &amp; Head-of-Engineering personas mapped across sources.</div>
+            </div>
+          </div>
+        </div>
+      </article>
     </section>
 
-    <section id="side" class="section" aria-labelledby="side-heading">
-      <header class="section-head">
-        <span class="section-index" aria-hidden="true">02</span>
-        <h2 id="side-heading">Side projects</h2>
-      </header>
-      <ol class="work-list">
-        <li class="work">
-          <h3 class="work-title">Trading Terminal</h3>
-          <p class="work-desc">Quantitative grading and backtest engine for equity setups — multi-module scoring, consolidation quality, short engine.</p>
-          <p class="work-stack"><span>Node</span><span>SQLite</span><span>React</span></p>
-          <p class="work-links"><a href="https://github.com/abhip2006/trading-dashboard" rel="noopener">github →</a></p>
-        </li>
-        <li class="work">
-          <h3 class="work-title">Portfolio Dashboard</h3>
-          <p class="work-desc">E*Trade portfolio dashboard — live P/L, analytics, watchlist, and alerting. Designed for speed during market hours.</p>
-          <p class="work-stack"><span>React</span><span>Vite</span><span>Express</span></p>
-          <p class="work-links"><a href="https://github.com/abhip2006/portfolio-dashboard" rel="noopener">github →</a></p>
-        </li>
-        <li class="work">
-          <h3 class="work-title">Grantradar</h3>
-          <p class="work-desc">AI grant-discovery platform — aggregates NIH, NSF, and Grants.gov, then matches opportunities to an organization's mission and eligibility.</p>
-          <p class="work-stack"><span>FastAPI</span><span>PostgreSQL</span><span>React</span><span>Celery</span></p>
-          <p class="work-links"><a href="https://github.com/abhip2006/grantradar" rel="noopener">github →</a></p>
-        </li>
-      </ol>
-    </section>
+    <section class="section" aria-labelledby="s02">
+      <div class="sec-head">
+        <div class="sec-num">§ 02</div>
+        <h2 class="sec-title" id="s02">Side Projects</h2>
+        <div class="sec-kicker">Three Studies</div>
+      </div>
 
-    <section id="stack" class="section" aria-labelledby="stack-heading">
-      <header class="section-head">
-        <span class="section-index" aria-hidden="true">03</span>
-        <h2 id="stack-heading">Stack</h2>
-      </header>
-      <dl class="stack">
-        <dt>Revenue</dt>
-        <dd><span>Salesforce</span><span>Outreach</span><span>HubSpot</span><span>Gong</span><span>Apollo</span><span>Clay</span><span>Smartlead</span><span>Zapier</span></dd>
-        <dt>Build</dt>
-        <dd><span>Python</span><span>SQL</span><span>Node</span><span>FastAPI</span><span>Claude API</span></dd>
-        <dt>Data</dt>
-        <dd><span>PostgreSQL</span><span>PowerBI</span><span>Tableau</span></dd>
-      </dl>
-    </section>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__plate plate-terminal" aria-hidden="true">
+            <div class="plate-stamp">Plate I</div>
+            <div class="plate-caption">Trading Terminal · v4.4</div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Trading Terminal</h3>
+            <p>Quantitative grading and backtest engine for equity setups — multi-module scoring, consolidation quality, short engine.</p>
+            <div class="card__foot">
+              <div class="card__stack">Node · SQLite · React</div>
+              <a class="card__link" href="https://github.com/abhip2006/trading-dashboard" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
 
-    <section id="about" class="section" aria-labelledby="about-heading">
-      <header class="section-head">
-        <span class="section-index" aria-hidden="true">04</span>
-        <h2 id="about-heading">About</h2>
-      </header>
-      <div class="prose">
-        <p>
-          Economics &amp; Data Science at <strong>UC Berkeley</strong>. I work at the seam
-          between go-to-market and data engineering — building revenue pipelines,
-          lead-routing systems, and the CRM plumbing that keeps sales teams moving.
-        </p>
-        <p>
-          Currently GTM at <strong>ChipAgents</strong>, where I own the Salesforce / Outreach /
-          HubSpot stack, build automated lead routing and scoring, and drive attributed
-          pipeline. Previously: growth at <strong>Opnova</strong> (10× revenue in 12 months),
-          trading &amp; risk at <strong>State Street</strong> (algorithmic settlement
-          optimization, 28% faster), and AI-adoption strategy for 15+ African nonprofits
-          through <strong>Microsoft</strong>.
-        </p>
-        <p>
-          I care about fast feedback loops, clean data pipelines, and tools that respect
-          the user's time. Off-hours: options trading, film, cooking, pickleball.
-        </p>
+        <article class="card reveal">
+          <div class="card__plate plate-dashboard" aria-hidden="true">
+            <div class="plate-stamp">Plate II</div>
+            <div class="plate-caption">Portfolio Dashboard · Live P/L</div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Portfolio Dashboard</h3>
+            <p>E*Trade portfolio dashboard — live P/L, analytics, watchlist, and alerting. Designed for speed during market hours.</p>
+            <div class="card__foot">
+              <div class="card__stack">React · Vite · Express</div>
+              <a class="card__link" href="https://github.com/abhip2006/portfolio-dashboard" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__plate plate-grants" aria-hidden="true">
+            <div class="plate-stamp">Plate III</div>
+            <div class="plate-caption">Grantradar · Federal sources</div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Grantradar</h3>
+            <p>AI grant-discovery platform — aggregates NIH, NSF, and Grants.gov, then matches opportunities to an organization&rsquo;s mission and eligibility.</p>
+            <div class="card__foot">
+              <div class="card__stack">FastAPI · PostgreSQL · React · Celery</div>
+              <a class="card__link" href="https://github.com/abhip2006/grantradar" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="contact" class="section" aria-labelledby="contact-heading">
-      <header class="section-head">
-        <span class="section-index" aria-hidden="true">05</span>
-        <h2 id="contact-heading">Contact</h2>
-      </header>
-      <ul class="contact-list">
-        <li>
-          <span class="k">Email</span>
-          <a href="mailto:abhip@berkeley.edu">abhip@berkeley.edu</a>
-        </li>
-        <li>
-          <span class="k">LinkedIn</span>
-          <a href="https://www.linkedin.com/in/abhinav-penagalapati/" rel="noopener">linkedin.com/in/abhinav-penagalapati</a>
-        </li>
-      </ul>
+    <section class="section" aria-labelledby="s03">
+      <div class="sec-head">
+        <div class="sec-num">§ 03</div>
+        <h2 class="sec-title" id="s03">Stack</h2>
+        <div class="sec-kicker">In Daily Use</div>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-col">
+          <h4>Revenue</h4>
+          <ul>
+            <li>Salesforce <span class="n">01</span></li>
+            <li>Outreach <span class="n">02</span></li>
+            <li>HubSpot <span class="n">03</span></li>
+            <li>Gong <span class="n">04</span></li>
+            <li>Apollo <span class="n">05</span></li>
+            <li>Clay <span class="n">06</span></li>
+            <li>Smartlead <span class="n">07</span></li>
+            <li>Zapier <span class="n">08</span></li>
+          </ul>
+        </div>
+        <div class="stack-col">
+          <h4>Build</h4>
+          <ul>
+            <li>Python <span class="n">01</span></li>
+            <li>SQL <span class="n">02</span></li>
+            <li>Node <span class="n">03</span></li>
+            <li>FastAPI <span class="n">04</span></li>
+            <li>Claude API <span class="n">05</span></li>
+          </ul>
+        </div>
+        <div class="stack-col">
+          <h4>Data</h4>
+          <ul>
+            <li>PostgreSQL <span class="n">01</span></li>
+            <li>PowerBI <span class="n">02</span></li>
+            <li>Tableau <span class="n">03</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="s04">
+      <div class="sec-head">
+        <div class="sec-num">§ 04</div>
+        <h2 class="sec-title" id="s04">About</h2>
+        <div class="sec-kicker">A Short Note</div>
+      </div>
+
+      <div class="about">
+        <aside class="about__sidebar">
+          <div class="label">At</div>
+          <div class="value">ChipAgents — GTM</div>
+
+          <div class="label">Previously</div>
+          <div class="value">Opnova · State Street · Microsoft</div>
+
+          <div class="label">Based</div>
+          <div class="value">Berkeley, California</div>
+
+          <div class="label">Index</div>
+          <div class="value about-index">§01 &nbsp;Work<br />§02 &nbsp;Projects<br />§03 &nbsp;Stack<br />§04 &nbsp;About<br />§05 &nbsp;Contact</div>
+        </aside>
+
+        <div class="about__body">
+          <p>Economics &amp; Data Science at UC Berkeley. I work at the seam between go-to-market and data engineering — building revenue pipelines, lead-routing systems, and the CRM plumbing that keeps sales teams moving.</p>
+
+          <p class="marginalia">ON CURRENT WORK</p>
+
+          <p>Currently GTM at ChipAgents, where I own the Salesforce / Outreach / HubSpot stack, build automated lead routing and scoring, and drive attributed pipeline. Previously: growth at Opnova (10× revenue in 12 months), trading &amp; risk at State Street (algorithmic settlement optimization, 28% faster), and AI-adoption strategy for 15+ African nonprofits through Microsoft.</p>
+
+          <p class="marginalia">ON TASTE</p>
+
+          <p>I care about fast feedback loops, clean data pipelines, and tools that respect the user&rsquo;s time. Off-hours: options trading, film, cooking, pickleball.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="s05">
+      <div class="sec-head">
+        <div class="sec-num">§ 05</div>
+        <h2 class="sec-title" id="s05">Contact</h2>
+        <div class="sec-kicker">Say Hello</div>
+      </div>
+
+      <div class="contact">
+        <h2>Let&rsquo;s <em>talk</em> pipeline.</h2>
+        <dl class="contact__links">
+          <div class="contact__row">
+            <dt>Email</dt>
+            <dd><a href="mailto:abhip@berkeley.edu">abhip@berkeley.edu</a></dd>
+          </div>
+          <div class="contact__row">
+            <dt>LinkedIn</dt>
+            <dd><a href="https://linkedin.com/in/abhinav-penagalapati" rel="noopener">linkedin.com/in/abhinav-penagalapati</a></dd>
+          </div>
+        </dl>
+      </div>
     </section>
   </main>
 
-  <footer class="site-foot">
-    <p>
-      <span class="foot-mark">ap_</span>
-      <a class="foot-email" href="mailto:abhip@berkeley.edu">abhip@berkeley.edu</a>
-      <span>&copy; <span id="year"></span> Abhinav Penagalapati</span>
-    </p>
+  <footer>
+    <a class="brand" href="#top">ap_<span class="dot" aria-hidden="true"></span></a>
+    <div class="foot-mail"><a href="mailto:abhip@berkeley.edu">abhip@berkeley.edu</a></div>
+    <div class="foot-copy">© <span id="year"></span> Abhinav Penagalapati</div>
   </footer>
 
   <script>
