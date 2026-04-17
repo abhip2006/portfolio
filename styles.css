@@ -441,6 +441,28 @@ main {
 }
 .stack-line strong { color: var(--ink); font-weight: 500; }
 
+/* ---------- Feature CTA (Try here + GitHub) ---------- */
+.feature__cta {
+  display: flex;
+  align-items: center;
+  gap: var(--s-24);
+  margin-top: var(--s-16);
+  flex-wrap: wrap;
+}
+.feature__cta .hero__cta { margin-top: 0; }
+.feature__repo {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--rule);
+  transition: color 180ms ease, border-color 180ms ease;
+}
+.feature__repo:hover { color: var(--ink); border-color: var(--ink); }
+
 /* ---------- Side-project cards (G2 / C2) ---------- */
 .cards {
   display: grid;
