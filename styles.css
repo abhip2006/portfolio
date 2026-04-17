@@ -454,13 +454,21 @@ main {
   background: var(--paper-2);
   border-radius: 4px;
   overflow: hidden;
+  position: relative;
+  isolation: isolate;
   transition: transform 260ms cubic-bezier(.2,.7,.2,1), box-shadow 260ms ease, border-color 260ms ease;
 }
 .card:hover {
   transform: translateY(-3px);
   border-color: var(--rule-strong);
   box-shadow: 0 12px 24px -18px rgba(11, 13, 20, 0.45);
+  cursor: pointer;
 }
+.card:has(.card__primary:focus-visible) {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+.card:hover .card__title { color: var(--blue); transition: color 180ms ease; }
 .card__plate {
   aspect-ratio: 3 / 4;
   position: relative;
@@ -563,7 +571,11 @@ main {
   justify-content: space-between;
   align-items: baseline;
   gap: var(--s-12);
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
 }
+.card__foot .card__stack { flex: 1 1 100%; margin-bottom: var(--s-8); }
 .card__stack {
   font-family: var(--mono);
   font-size: 10px;
@@ -578,8 +590,21 @@ main {
   text-transform: uppercase;
   color: var(--blue);
   border-bottom: 1px solid var(--blue);
+  position: relative;
+  z-index: 2;
 }
 .card__link:hover { color: var(--blue-deep); border-bottom-color: var(--blue-deep); }
+.card__link + .card__link { margin-left: var(--s-8); }
+
+/* Stretched-link pattern — entire card clicks through to Live */
+.card__primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: 4px;
+}
+.card__primary:focus-visible { outline: none; }
 
 /* ---------- Stack ---------- */
 .stack-grid {
