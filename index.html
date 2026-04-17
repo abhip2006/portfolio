@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark light" />
   <title>Abhinav Penagalapati — Portfolio</title>
-  <meta name="description" content="Abhinav Penagalapati — GTM engineer at ChipAgents. Berkeley Economics &amp; Data Science. Building revenue systems and data pipelines." />
+  <meta name="description" content="Abhinav Penagalapati — GTM / Growth at ChipAgents. Berkeley Economics &amp; Data Science." />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -23,21 +23,10 @@
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-heading">
-      <p class="eyebrow">Engineer · Berkeley</p>
+      <p class="eyebrow">GTM / Growth · Berkeley</p>
       <h1 id="hero-heading" class="display">Abhinav<br />Penagalapati</h1>
-      <p class="lede">
-        I build revenue systems and data pipelines — the plumbing that
-        lets go-to-market teams move at the speed of the product.
-        Currently GTM at ChipAgents.
-      </p>
-      <p class="status" aria-label="Current focus">
-        <span class="dot" aria-hidden="true"></span>
-        <span class="status-label">Now</span>
-        <span>GTM engineering at ChipAgents</span>
-      </p>
       <div class="hero-actions">
         <a class="btn" href="#work">See work <span aria-hidden="true">→</span></a>
-        <a class="btn btn-ghost" href="mailto:abhip@berkeley.edu">Email</a>
       </div>
     </section>
 
@@ -47,10 +36,23 @@
         <h2 id="work-heading">Selected work</h2>
       </header>
       <ol class="work-list">
-        <li class="work">
+        <li class="work case-study">
           <h3 class="work-title">GTM Data Enrichment System</h3>
-          <p class="work-desc">Python pipeline enriching account and contact data from Crunchbase and LinkedIn into Salesforce; weighted ICP scoring with Claude API + Smartlead in outbound sequences — 2–3× higher reply rates and 300+ high-intent accounts surfaced.</p>
-          <p class="work-stack"><span>Python</span><span>Salesforce</span><span>Clay</span><span>Claude API</span></p>
+          <dl class="case">
+            <dt>Problem</dt>
+            <dd>Outbound teams needed clean, ranked account and contact data to sustain high-volume motion — manual CRM hygiene and generic lists were capping reply rates.</dd>
+            <dt>Approach</dt>
+            <dd>Python pipeline sourcing and enriching account + contact data from Crunchbase and LinkedIn into Salesforce. Multi-source identity workflow in Clay mapping personas by title. Weighted ICP scoring integrated with Claude API + Smartlead across outbound sequences.</dd>
+            <dt>Impact</dt>
+            <dd>
+              <ul class="metrics">
+                <li>2–3× higher outbound reply rates</li>
+                <li>300+ high-intent accounts surfaced</li>
+                <li>600+ VP / Head-of-Engineering personas mapped</li>
+              </ul>
+            </dd>
+          </dl>
+          <p class="work-stack"><span>Python</span><span>Salesforce</span><span>Clay</span><span>Claude API</span><span>Smartlead</span></p>
         </li>
       </ol>
     </section>
@@ -65,23 +67,41 @@
           <h3 class="work-title">Trading Terminal</h3>
           <p class="work-desc">Quantitative grading and backtest engine for equity setups — multi-module scoring, consolidation quality, short engine.</p>
           <p class="work-stack"><span>Node</span><span>SQLite</span><span>React</span></p>
+          <p class="work-links"><a href="https://github.com/abhip2006/trading-dashboard" rel="noopener">github →</a></p>
         </li>
         <li class="work">
           <h3 class="work-title">Portfolio Dashboard</h3>
           <p class="work-desc">E*Trade portfolio dashboard — live P/L, analytics, watchlist, and alerting. Designed for speed during market hours.</p>
           <p class="work-stack"><span>React</span><span>Vite</span><span>Express</span></p>
+          <p class="work-links"><a href="https://github.com/abhip2006/portfolio-dashboard" rel="noopener">github →</a></p>
         </li>
         <li class="work">
           <h3 class="work-title">Grantradar</h3>
           <p class="work-desc">AI grant-discovery platform — aggregates NIH, NSF, and Grants.gov, then matches opportunities to an organization's mission and eligibility.</p>
           <p class="work-stack"><span>FastAPI</span><span>PostgreSQL</span><span>React</span><span>Celery</span></p>
+          <p class="work-links"><a href="https://github.com/abhip2006/grantradar" rel="noopener">github →</a></p>
         </li>
       </ol>
     </section>
 
-    <section id="about" class="section" aria-labelledby="about-heading">
+    <section id="stack" class="section" aria-labelledby="stack-heading">
       <header class="section-head">
         <span class="section-index" aria-hidden="true">03</span>
+        <h2 id="stack-heading">Stack</h2>
+      </header>
+      <dl class="stack">
+        <dt>Revenue</dt>
+        <dd><span>Salesforce</span><span>Outreach</span><span>HubSpot</span><span>Gong</span><span>Apollo</span><span>Clay</span><span>Smartlead</span><span>Zapier</span></dd>
+        <dt>Build</dt>
+        <dd><span>Python</span><span>SQL</span><span>Node</span><span>FastAPI</span><span>Claude API</span></dd>
+        <dt>Data</dt>
+        <dd><span>PostgreSQL</span><span>PowerBI</span><span>Tableau</span></dd>
+      </dl>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <header class="section-head">
+        <span class="section-index" aria-hidden="true">04</span>
         <h2 id="about-heading">About</h2>
       </header>
       <div class="prose">
@@ -107,7 +127,7 @@
 
     <section id="contact" class="section" aria-labelledby="contact-heading">
       <header class="section-head">
-        <span class="section-index" aria-hidden="true">04</span>
+        <span class="section-index" aria-hidden="true">05</span>
         <h2 id="contact-heading">Contact</h2>
       </header>
       <ul class="contact-list">
@@ -126,6 +146,7 @@
   <footer class="site-foot">
     <p>
       <span class="foot-mark">ap_</span>
+      <a class="foot-email" href="mailto:abhip@berkeley.edu">abhip@berkeley.edu</a>
       <span>&copy; <span id="year"></span> Abhinav Penagalapati</span>
     </p>
   </footer>

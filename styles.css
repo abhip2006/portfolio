@@ -233,19 +233,44 @@ main { padding-bottom: var(--s-9); }
   margin-bottom: var(--s-5);
 }
 
-.status {
-  display: inline-flex;
+.now {
+  display: grid;
+  gap: var(--s-3);
+  margin-bottom: var(--s-6);
+  padding: var(--s-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  max-width: 60ch;
+}
+.now-label {
+  display: flex;
   align-items: center;
   gap: var(--s-2);
+  margin: 0;
+}
+.now-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--s-1);
+}
+.now-list li {
   font-family: var(--font-mono);
   font-size: var(--fs-sm);
-  color: var(--muted);
-  padding: var(--s-2) var(--s-3);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  margin-bottom: var(--s-6);
+  color: var(--text);
+  padding-left: var(--s-4);
+  position: relative;
+  line-height: 1.5;
 }
-.status .dot {
+.now-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.dot {
   width: 8px;
   height: 8px;
   background: var(--accent);
@@ -253,7 +278,8 @@ main { padding-bottom: var(--s-9); }
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent);
   animation: pulse 2.4s ease-in-out infinite;
 }
-.status .status-label {
+.status-label {
+  font-family: var(--font-mono);
   color: var(--text);
   font-weight: 600;
   text-transform: uppercase;
@@ -365,8 +391,94 @@ main { padding-bottom: var(--s-9); }
   letter-spacing: 0.02em;
 }
 
+.case {
+  margin: 0 0 var(--s-4);
+  max-width: 62ch;
+}
+.case dt {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-top: var(--s-4);
+}
+.case dt:first-of-type { margin-top: 0; }
+.case dd {
+  color: var(--muted);
+  margin: var(--s-1) 0 0;
+}
+
+.metrics {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--s-1);
+}
+.metrics li {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--text);
+  padding-left: var(--s-4);
+  position: relative;
+  line-height: 1.5;
+}
+.metrics li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.work-links {
+  margin: var(--s-3) 0 0;
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+}
+.work-links a {
+  color: var(--muted);
+  border-bottom: 0;
+  margin-right: var(--s-4);
+}
+.work-links a:hover,
+.work-links a:focus-visible { color: var(--accent); }
+
 /* -----[ 11. Prose ]-------------------------------------- */
 .prose p { max-width: 62ch; }
+
+/* -----[ 11b. Stack ]------------------------------------- */
+.stack {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: var(--s-4);
+  margin: 0;
+  max-width: 62ch;
+}
+.stack dt {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin: 0;
+  padding-top: 4px;
+}
+.stack dd {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+.stack dd span {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--accent);
+  padding: 3px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+}
 
 /* -----[ 12. Contact ]------------------------------------ */
 .contact-list {
@@ -414,6 +526,12 @@ main { padding-bottom: var(--s-9); }
   font-weight: 700;
   letter-spacing: 0.02em;
 }
+.foot-email {
+  color: var(--muted);
+  border-bottom: 0;
+}
+.foot-email:hover,
+.foot-email:focus-visible { color: var(--accent); }
 
 /* -----[ 14. Skip link ]---------------------------------- */
 .skip {
@@ -447,6 +565,12 @@ main { padding-bottom: var(--s-9); }
     grid-template-columns: 1fr;
     gap: var(--s-1);
   }
+  .stack {
+    grid-template-columns: 1fr;
+    gap: var(--s-2);
+  }
+  .stack dt { margin-top: var(--s-3); }
+  .stack dt:first-child { margin-top: 0; }
   h3 { font-size: var(--fs-md); }
 }
 
@@ -465,5 +589,5 @@ main { padding-bottom: var(--s-9); }
     scroll-behavior: auto !important;
   }
   .brand-cursor { animation: none; background: var(--muted); }
-  .status .dot { animation: none; }
+  .dot { animation: none; }
 }
