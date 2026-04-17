@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Abhinav Penagalapati — Portfolio</title>
+  <meta name="description" content="Abhinav Penagalapati — GTM engineer at ChipAgents. Berkeley Economics &amp; Data Science. Building revenue systems and data pipelines." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site">
+    <a class="brand" href="#top" aria-label="Home">ap<span class="brand-cursor" aria-hidden="true"></span></a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="site-email" href="mailto:abhip@berkeley.edu" aria-label="Email Abhinav">abhip@berkeley.edu</a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <p class="eyebrow">Engineer · Berkeley</p>
+      <h1 id="hero-heading" class="display">Abhinav<br />Penagalapati</h1>
+      <p class="lede">
+        I build revenue systems and data pipelines — the plumbing that
+        lets go-to-market teams move at the speed of the product.
+        Currently GTM at ChipAgents.
+      </p>
+      <p class="status" aria-label="Current focus">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="status-label">Now</span>
+        <span>GTM engineering at ChipAgents</span>
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="#work">See work <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="mailto:abhip@berkeley.edu">Email</a>
+      </div>
+    </section>
+
+    <section id="work" class="section" aria-labelledby="work-heading">
+      <header class="section-head">
+        <span class="section-index" aria-hidden="true">01</span>
+        <h2 id="work-heading">Selected work</h2>
+      </header>
+      <ol class="work-list">
+        <li class="work">
+          <h3 class="work-title">GTM Data Enrichment System</h3>
+          <p class="work-desc">Python pipeline enriching account and contact data from Crunchbase and LinkedIn into Salesforce; weighted ICP scoring with Claude API + Smartlead in outbound sequences — 2–3× higher reply rates and 300+ high-intent accounts surfaced.</p>
+          <p class="work-stack"><span>Python</span><span>Salesforce</span><span>Clay</span><span>Claude API</span></p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="side" class="section" aria-labelledby="side-heading">
+      <header class="section-head">
+        <span class="section-index" aria-hidden="true">02</span>
+        <h2 id="side-heading">Side projects</h2>
+      </header>
+      <ol class="work-list">
+        <li class="work">
+          <h3 class="work-title">Trading Terminal</h3>
+          <p class="work-desc">Quantitative grading and backtest engine for equity setups — multi-module scoring, consolidation quality, short engine.</p>
+          <p class="work-stack"><span>Node</span><span>SQLite</span><span>React</span></p>
+        </li>
+        <li class="work">
+          <h3 class="work-title">Portfolio Dashboard</h3>
+          <p class="work-desc">E*Trade portfolio dashboard — live P/L, analytics, watchlist, and alerting. Designed for speed during market hours.</p>
+          <p class="work-stack"><span>React</span><span>Vite</span><span>Express</span></p>
+        </li>
+        <li class="work">
+          <h3 class="work-title">Grantradar</h3>
+          <p class="work-desc">AI grant-discovery platform — aggregates NIH, NSF, and Grants.gov, then matches opportunities to an organization's mission and eligibility.</p>
+          <p class="work-stack"><span>FastAPI</span><span>PostgreSQL</span><span>React</span><span>Celery</span></p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <header class="section-head">
+        <span class="section-index" aria-hidden="true">03</span>
+        <h2 id="about-heading">About</h2>
+      </header>
+      <div class="prose">
+        <p>
+          Economics &amp; Data Science at <strong>UC Berkeley</strong>. I work at the seam
+          between go-to-market and data engineering — building revenue pipelines,
+          lead-routing systems, and the CRM plumbing that keeps sales teams moving.
+        </p>
+        <p>
+          Currently GTM at <strong>ChipAgents</strong>, where I own the Salesforce / Outreach /
+          HubSpot stack, build automated lead routing and scoring, and drive attributed
+          pipeline. Previously: growth at <strong>Opnova</strong> (10× revenue in 12 months),
+          trading &amp; risk at <strong>State Street</strong> (algorithmic settlement
+          optimization, 28% faster), and AI-adoption strategy for 15+ African nonprofits
+          through <strong>Microsoft</strong>.
+        </p>
+        <p>
+          I care about fast feedback loops, clean data pipelines, and tools that respect
+          the user's time. Off-hours: options trading, film, cooking, pickleball.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <header class="section-head">
+        <span class="section-index" aria-hidden="true">04</span>
+        <h2 id="contact-heading">Contact</h2>
+      </header>
+      <ul class="contact-list">
+        <li>
+          <span class="k">Email</span>
+          <a href="mailto:abhip@berkeley.edu">abhip@berkeley.edu</a>
+        </li>
+        <li>
+          <span class="k">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/abhinav-penagalapati/" rel="noopener">linkedin.com/in/abhinav-penagalapati</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <p>
+      <span class="foot-mark">ap_</span>
+      <span>&copy; <span id="year"></span> Abhinav Penagalapati</span>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
