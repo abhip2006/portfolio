@@ -689,16 +689,6 @@ main {
   font-weight: 300;
   letter-spacing: -0.005em;
 }
-.about__body p:first-of-type::first-letter {
-  font-family: var(--serif);
-  float: left;
-  font-size: 72px;
-  line-height: 0.85;
-  padding: 6px var(--s-12) 0 0;
-  color: var(--blue);
-  font-weight: 400;
-  font-variation-settings: "opsz" 144;
-}
 .marginalia {
   font-family: var(--mono);
   font-size: 10px;
