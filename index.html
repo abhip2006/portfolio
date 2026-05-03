@@ -60,25 +60,25 @@
 
       <article class="feature reveal">
         <div class="feature__info">
-          <h3>SignalForge &mdash; Open-Source Signal Engine</h3>
+          <h3>Credence &mdash; Trust &amp; Fit Scoring for Hard-to-Verify Buyers</h3>
 
           <dl>
             <div class="feature__sub">
               <dt>Problem</dt>
-              <dd>Most open-source AI-SDR tools ship without evals, so reply rates collapse once the draft pattern-matches as AI slop. Outbound teams need signal-anchored emails tested like software, not like prompts.</dd>
+              <dd>Horizontal tools (Clay, Apollo, ZoomInfo) score B2B buyers off self-reported titles, which collapses in sensitive industries like semiconductors where actual functional scope rarely matches the LinkedIn line. Outbound and recruiting teams need an inspectable score with a full evidence trail &mdash; not another opaque firmographic.</dd>
             </div>
             <div class="feature__sub">
               <dt>Approach</dt>
-              <dd>Nine signal sources (Greenhouse, Ashby, Lever, GitHub, SEC EDGAR, news RSS, Exa, Hacker News, Product Hunt) feed a YAML-declared ICP scorer. Claude writes the &ldquo;why now&rdquo; research brief and the cold-email drafter; a reply-quality eval harness blends deterministic checks, an LLM judge, and cliff penalties so a weighted average can&rsquo;t rationalize a spammy draft into a pass. Golden-set regression and a cross-model benchmark gate every prompt change.</dd>
+              <dd>Per-source fetchers (ATS endpoints, SEC EDGAR, USPTO, OpenAlex, GitHub, wire-service RSS, conference programs) feed Pydantic-validated extractors. A four-dimension engine &mdash; Role Fit, Authority Fit, Company Fit, Signal Confidence &mdash; returns sub-scores separately, with cited evidence IDs and required disconfirming signals to block confirmation-bias scoring. Discover is a force-directed graph across nine node types (person, company, role, city, school, conference, industry, past employer, partnership) driven by a Z.AI tool-calling chat sidebar; click a person, route into the deep-dive with the full provenance trail.</dd>
             </div>
           </dl>
 
           <div class="stack-line">
-            <strong>Stack</strong> &nbsp;·&nbsp; Python &nbsp;·&nbsp; asyncio &nbsp;·&nbsp; Streamlit &nbsp;·&nbsp; Ollama &nbsp;·&nbsp; Claude API &nbsp;·&nbsp; SQLite
+            <strong>Stack</strong> &nbsp;·&nbsp; React &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; Vite &nbsp;·&nbsp; Supabase &nbsp;·&nbsp; FastAPI &nbsp;·&nbsp; Claude API &nbsp;·&nbsp; Z.AI GLM-5.1
           </div>
 
           <div class="feature__cta">
-            <a class="hero__cta" id="signalforge-try" href="https://qing291-signalforge.hf.space" rel="noopener" target="_blank">
+            <a class="hero__cta" id="credence-try" href="https://ef-marketing-agent-hack.vercel.app/discover" rel="noopener" target="_blank">
               <span>Try here for yourself</span>
               <span class="arrow" aria-hidden="true">→</span>
             </a>
@@ -88,16 +88,16 @@
         <div class="feature__media">
           <div class="impact" role="list" aria-label="Impact metrics">
             <div class="impact__cell" role="listitem">
-              <div class="k">250<em>+</em></div>
-              <div class="v">Live buying signals pooled across 30+ curated AI-native companies.</div>
+              <div class="k">4</div>
+              <div class="v">Sub-scores returned separately &mdash; Role, Authority, Company, Confidence. Never collapsed into a single number.</div>
             </div>
             <div class="impact__cell" role="listitem">
-              <div class="k">10<em>/</em>10</div>
-              <div class="v">Golden-set regression passing with the LLM-judge harness enabled.</div>
+              <div class="k">9</div>
+              <div class="v">Node types triangulated in the Discover graph &mdash; people, companies, roles, cities, schools, conferences, industries, past employers, partnerships.</div>
             </div>
             <div class="impact__cell" role="listitem">
-              <div class="k">92<em>.</em>4</div>
-              <div class="v">Top draft score &mdash; &ldquo;Attribution or headcount?&rdquo; written for Ramp on scraped signals.</div>
+              <div class="k">10<em>+</em></div>
+              <div class="v">Evidence sources per prospect &mdash; ATS, EDGAR, patents, publications, press, GitHub &mdash; each with source, URL, timestamp, and confidence.</div>
             </div>
           </div>
         </div>
